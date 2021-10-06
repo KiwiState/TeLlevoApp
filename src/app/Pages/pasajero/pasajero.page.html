@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-button size="small" slot="start" mode="md">
+      <ion-back-button></ion-back-button>
+    </ion-button>
+
+    <ion-title>
+      TeLlevo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="ion-padding-vertical">
+    <ion-card class="ion-text-center">
+      <ion-card-title>
+        <ion-label>
+          <h3>Bienvenido  {{nombreUsu}}</h3>
+        </ion-label>
+      </ion-card-title>
+
+      <ion-card-content>
+
+        <ion-item>
+          <ion-label position="floating">¿A donde desea ir?</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Hora de Salida</ion-label>
+          <ion-datetime displayFormat="HH:mm"></ion-datetime>
+        </ion-item>
+
+        <br>
+        <ion-button (click)="listado()">Buscar</ion-button>
+
+      </ion-card-content>  
+    </ion-card>
+  </div>
+
+</ion-content>
+<div>
+  <ion-footer class=" ion-text-center">App desarrollada por DuocUc</ion-footer>
+  </div>

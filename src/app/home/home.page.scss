@@ -1,0 +1,61 @@
+#container {
+  text-align: center;
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ion-content.background{
+  --ion-background-color : #ffffff;
+}
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#carta {
+  background-color: #334555;
+
+}
+#welcome{
+  color: #ffffff
+}
+#user_str{
+  color: #ffffff
+}
+#pass_str{
+  color: #ffffff
+}
+#user_in_str{
+  color: #000000;
+ 
+}
+#pass_in_str{
+  color: #000000;
+}
+#eye{
+  color: #000000;
+}
+#btn{
+  color: #000000
+} 
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #334555;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+#lost{
+  color: #ffffff;
+  cursor: pointer;
+}

@@ -1,0 +1,66 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-padding-top ion-text-center">
+      TeLlevo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class = "background" [fullscreen]="true">
+
+  <div class="ion-padding-vertical">
+    <ion-card class="ion-text-center" id= "carta" >
+      <ion-card-title>
+        <ion-label>
+          <h3 id = "welcome">Bienvenido!</h3>
+        </ion-label>
+      </ion-card-title>
+
+      <ion-card-content>
+
+         
+          <!--
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input type="text" [(ngModel)]="nombreUsu"></ion-input>
+          -->
+          <mat-form-field appearance="legacy">
+            
+              <mat-label id = "user_str">Usuario</mat-label>
+              <input isRequired = "true" id = "user_in_str" matInput type="text" [(ngModel)]="nombreUsu" >
+           
+          </mat-form-field>
+        
+         
+      
+      
+      
+         
+          <!--
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password"></ion-input>
+          -->
+          <mat-form-field appearance="legacy">
+            <mat-label id = "pass_str">Password</mat-label>
+            <input isRequired = "true" id = "pass_in_str" matInput [type]="hide ? 'password' : 'text'">
+            <button id = "eye" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+        
+
+        <br>
+        <ion-button  color = "warning"  (click)="ingre()">Ingresar(Conductor)</ion-button>
+        <ion-button  color = "warning" (click)="pasa()">Ingresar(Estudiante)</ion-button>
+        <br>
+        <ion-label id="lost" (click)="recovery()">¿Olvidó su contraseña?</ion-label>
+        
+      </ion-card-content>  
+    </ion-card>
+    
+  </div>
+</ion-content>
+<div>
+<ion-footer class=" ion-text-center">App desarrollada por DuocUc</ion-footer>
+</div>
+
+

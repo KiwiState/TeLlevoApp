@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar  class="center">
+
+    <ion-button color="primary" size="small" slot="start" mode="md">
+      <ion-back-button></ion-back-button>
+    </ion-button>
+
+    <ion-title >
+      TeLlevo
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  padding class = "background"  [fullscreen]="true">
+
+  <div class="ion-padding-vertical">
+    <ion-card id = "carta" class="ion-text-center">
+      <ion-card-title>
+        <ion-label>
+          <h3 id ="letras">Bienvenido  {{nombreUsu}}</h3>
+        </ion-label>
+      </ion-card-title>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Marca Auto</ion-label>
+          <ion-select id = "user_str">
+            <ion-select-option>Chevrolet</ion-select-option>
+            <ion-select-option>Nissan</ion-select-option>
+            <ion-select-option>Mercedes-Benz</ion-select-option>
+            <ion-select-option>Audi</ion-select-option>
+            <ion-select-option>Ford</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Color Auto</ion-label>
+          <ion-select>
+            <ion-select-option>Rojo</ion-select-option>
+            <ion-select-option>Blanco</ion-select-option>
+            <ion-select-option>Negro</ion-select-option>
+            <ion-select-option>Azul</ion-select-option>
+            <ion-select-option>Plomo</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        
+        <ion-item>
+          <ion-label position="floating">Fecha de Viaje</ion-label>
+          <ion-datetime displayFormat="DD/MM/YYYY" min="1994-03-14" max="2021-12-31" value="2002-09-23T15:03:46.789"></ion-datetime>
+        </ion-item>
+          
+        <ion-item>
+          <ion-label>Destino:</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Hora de Salida</ion-label>
+          <ion-datetime displayFormat="HH:mm"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="">Precio: $</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">N° Contacto</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <br>
+        <ion-button (click)="alerta()">Agendar</ion-button>
+
+      </ion-card-content>
+    </ion-card>
+    
+  </div>
+  
+    
+  
+</ion-content>
+<div>
+<ion-footer fill = "solid" class=" ion-text-center">App desarrollada por DuocUc</ion-footer>
+</div>
